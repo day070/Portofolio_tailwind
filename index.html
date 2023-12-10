@@ -23,7 +23,7 @@
               id="hamburger"
               name="hamburger"
               type="button"
-              class="block absolute right-4"
+              class="block absolute right-4 lg:hidden"
             >
               <span
                 class="hamburger-line transition duration-300 ease-in-out origin-top-left"
@@ -35,6 +35,44 @@
                 class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
               ></span>
             </button>
+
+            <!-- Navbar Start -->
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Beranda</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Tentang Saya</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#portofolio"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Portofolio</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#contact"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <!-- Navbar End -->
           </div>
         </div>
       </div>
@@ -93,6 +131,7 @@
       </div>
     </section>
     <!-- Hero Section ENd -->
+
     <!-- Section About Start -->
     <section id="about" class="pt-36 pb-32">
       <div class="container">
@@ -193,6 +232,49 @@
       </div>
     </section>
     <!-- Section About End -->
+
+    <!-- Portofolio Start -->
+    <section id="portofolio" class="pt-36 pb-16 bg-slate-200">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h4 class="font-semibold text-lg text-primary mb-w">Portofolio</h4>
+            <h2 class="font-bold text-dark text-3xl mb-4">Projek Saya</h2>
+            <p class="font-medium text-secondary text-md">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam,
+              voluptate harum enim rem laborum officiis accusantium neque
+              inventore quo corporis!
+            </p>
+          </div>
+        </div>
+        <div class="w-full px-4 flex flex-wrap justify-center">
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img
+                src="dist/img/portfolio/projek-mole.png"
+                alt="Whack-a-mole"
+              />
+              <h3 class="font-semibold text-xl text-dark mt-5 mb-3">
+                Whack A Mole
+              </h3>
+              <p class="font-medium text-base text-secondary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                commodi similique minus!
+              </p>
+              <button
+                class="w-[100px] my-2 bg-primary rounded-full transition duration-300 hover:text-white hover:bg-black"
+              >
+                <a href="https://day070.github.io/Wack_A_Mole/" target="_blank"
+                  >Kunjugi...</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portofolio End -->
     <script src="dist/js/script.js"></script>
   </body>
 </html>
