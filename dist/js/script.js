@@ -18,3 +18,19 @@ hamburger.addEventListener("click", function () {
   hamburger.classList.toggle("hamburger-active");
   navMenu.classList.toggle("hidden");
 });
+
+// animate text
+const text = document.querySelector(".teks-kedua");
+const textLoad = () => {
+  setTimeout(() => {
+    text.textContent = "Student";
+  }, 0);
+  setTimeout(() => {
+    text.textContent = "Programmer";
+  }, 4000);
+  setTimeout(() => {
+    text.textContent = "Desaigner";
+  }, 8000);
+};
+textLoad();
+setInterval(textLoad, 12000);
