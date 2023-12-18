@@ -689,20 +689,12 @@ video {
   display: none;
 }
 
-.h-5 {
-  height: 1.25rem;
-}
-
 .h-9 {
   height: 2.25rem;
 }
 
 .h-full {
   height: 100%;
-}
-
-.w-2 {
-  width: 0.5rem;
 }
 
 .w-9 {
@@ -984,11 +976,11 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-.container {
+.bungkus {
   overflow: hidden;
 }
 
-.container .text {
+.bungkus .kul {
   position: relative;
   --tw-text-opacity: 1;
   color: rgb(3 169 252 / var(--tw-text-opacity));
@@ -996,11 +988,11 @@ body {
   font-weight: 600;
 }
 
-.container .text.teks-pertama {
+.bungkus .kul.teks-pertama {
   color: gray;
 }
 
-.container .text.teks-kedua::before {
+.container .kul.teks-kedua::before {
   content: "";
   position: absolute;
   top: 0;
